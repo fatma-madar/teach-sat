@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 
+
 :root {
   --ink: #212529;
   --deep: #343a40;
@@ -11,7 +12,8 @@
   --cream-soft: #e9ecef;
   --white: #f8f9fa;
   --line: rgba(73, 80, 87, 0.12);
-  --muted: #6c757d;
+  --muted: rgb(107, 117, 125);
+  --light: #ced4da;
   --shadow: 0 20px 60px rgba(73, 80, 87, 0.351);
   --soft: 0 8px 28px rgba(73, 80, 87, 0.08);
   --radius-s: 12px;
@@ -88,18 +90,39 @@ button {
 /* HEADER */
 
 .site-header {
-  position: fixed;
-  inset: 0 0 auto;
-  z-index: 20;
-  background: rgba(253, 249, 243, 0.9);
-  color: var(--ink);
-  border-bottom: 1px solid var(--line);
-  backdrop-filter: blur(18px);
+ position: fixed;
+    top: 20px;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+
+    
+    border: 0x solid rgba(73, 80, 87, 0.12);
+    border-radius:0px;
+
+    box-shadow: 0 10px 35px rgba(33, 37, 41, 0.15);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    transition:
+        top 0.60s ease,
+        width 0.60s ease,
+        background 0.60s ease,
+        box-shadow 0.6s ease;
 }
 
 .site-header.scrolled {
-  box-shadow: 0 8px 30px rgba(73, 80, 87, 0.12);
+  top: 12px;
+
+    background: var(--ink);
+
+    box-shadow: 0 12px 40px rgba(33, 37, 41, 0.2);
 }
+
 
 .navbar {
   min-height: 78px;
@@ -180,14 +203,26 @@ button {
   margin-inline: auto;
 }
 
+
+
 .nav-link {
   display: block;
   padding: 9px 16px;
-  color: var(--muted);
+  color: var(--light);
+  background:0;
   font-size: 0.91rem;
-  transition: color 0.25s, background 0.25s;
+  transition:  
+  background 0.25s;
   border-radius: var(--radius-pill);
+  margin-inline:0.25s,
+  color 0.25s;
+
+    
 }
+.site-header.scrolled .nav-link{
+  color: var(--light);
+}
+
 
 .nav-link:hover,
 .nav-link.active {
@@ -1847,8 +1882,14 @@ summary:focus-visible {
   }
 
   .site-header {
-    position: fixed;
-  }
+    top: 12px;
+        width: calc(100% - 24px);
+        border-radius: 14px;
+    }
+
+    .site-header.scrolled {
+        top: 8px;
+    }
 
   .navbar {
     min-height: 70px;
