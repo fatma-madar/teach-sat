@@ -4,365 +4,913 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="VSAT — اتصال لا ينقطع في أقسى الظروف. حلول اتصالات أقمارية مستقلة عن البنية التحتية الأرضية." />
+
+  <meta
+    name="description"
+    content="VSAT — اتصال لا ينقطع في أقسى الظروف. حلول اتصالات أقمارية مستقلة عن البنية التحتية الأرضية."
+  />
+
   <title>VSAT | Tech Sat</title>
+
+  <!-- Global Styles -->
   <link rel="stylesheet" href="../tech-sat.css" />
-  <link rel="stylesheet" href="service-page.css" />
-  <link rel="stylesheet" href="service-responsive.css" />
+
+  <!-- Shared Components -->
   <link rel="stylesheet" href="../header.css" />
   <link rel="stylesheet" href="../footer.css" />
+
+  <!-- Service Page Styles -->
+  <link rel="stylesheet" href="service-page.css" />
+  <link rel="stylesheet" href="service-responsive.css" />
 </head>
 
 <body class="service-page">
-  <!-- ==================== HEADER ==================== -->
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+
   <header class="site-header" id="site-header">
+
     <nav class="navbar container" aria-label="التنقل الرئيسي">
-      <a class="brand" href="../index.html" aria-label="Tech Sat - الرئيسية">
+
+      <!-- Brand -->
+      <a
+        class="brand"
+        href="../index.html"
+        aria-label="Tech Sat - الرئيسية"
+      >
         <span class="brand-mark" aria-hidden="true">
-          <span></span><span></span><span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </span>
-        <span class="brand-name">Tech <b>Sat</b></span>
+
+        <span class="brand-name">
+          Tech <b>Sat</b>
+        </span>
       </a>
 
-      <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false"
-        aria-controls="main-menu">
-        <span></span><span></span><span></span>
+      <!-- Mobile Menu Toggle -->
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="فتح القائمة"
+        aria-expanded="false"
+        aria-controls="main-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
+      <!-- Navigation -->
       <ul class="nav-links" id="main-menu">
-        <li><a class="nav-link" href="../index.html">الرئيسية</a></li>
-        <li><a class="nav-link" href="../index.html#about">من نحن</a></li>
 
-          <li class="nav-dropdown">
-            <button class="nav-link dropdown-toggle">القطاعات</button>
-            <div class="dropdown-menu">
-              <a href="../industry/energy.html"><div><strong>الطاقة</strong></div></a>
-              <a href="../industry/government.html"><div><strong>الحكومة</strong></div></a>
-              <a href="../industry/corporate.html"><div><strong>الشركات</strong></div></a>
-            </div>
-          </li>
-
-          <li class="nav-dropdown">
-            <button class="nav-link dropdown-toggle">المنتجات</button>
-            <div class="dropdown-menu">
-              <a href="../Products/PR1.html"><div><strong>Comtech CDM-625A</strong></div></a>
-              <a href="../Products/PR2.html"><div><strong>iDirect iQ 200</strong></div></a>
-              <a href="../Products/PR3.html"><div><strong>Newtec MDM2510</strong></div></a>
-            </div>
-          </li>
-        </ul>
-
-        <div class="nav-actions">
-          <button class="language-switch" type="button" aria-label="تبديل اللغة">
-            AR <span>/</span> EN
-          </button>
-          <a class="header-cta" href="#contact">
-           اطلب الخدمة <span aria-hidden="true">↗</span>
+        <!-- الرئيسية -->
+        <li>
+          <a
+            class="nav-link"
+            href="../index.html"
+          >
+            الرئيسية
           </a>
+        </li>
+
+        <!-- من نحن -->
+        <li>
+          <a
+            class="nav-link"
+            href="../index.html#about"
+          >
+            من نحن
+          </a>
+        </li>
+
+        <!-- الخدمات -->
+        <li class="nav-dropdown">
+
+          <button
+            class="nav-link dropdown-toggle"
+            type="button"
+          >
+            الخدمات
+          </button>
+
           <div class="dropdown-menu">
+
             <a href="vsat.html">
-              <div><strong>VSAT</strong></div>
+              <div>
+                <strong>VSAT</strong>
+              </div>
             </a>
+
             <a href="broadband.html">
-              <div><strong>النطاق العريض</strong></div>
+              <div>
+                <strong>النطاق العريض</strong>
+              </div>
             </a>
+
             <a href="voice-data.html">
-              <div><strong>الصوت والبيانات</strong></div>
+              <div>
+                <strong>الصوت والبيانات</strong>
+              </div>
             </a>
+
             <a href="integration.html">
-              <div><strong>تكامل الأنظمة</strong></div>
+              <div>
+                <strong>تكامل الأنظمة</strong>
+              </div>
             </a>
+
           </div>
         </li>
 
+        <!-- القطاعات -->
         <li class="nav-dropdown">
-          <button class="nav-link dropdown-toggle">القطاعات</button>
+
+          <button
+            class="nav-link dropdown-toggle"
+            type="button"
+          >
+            القطاعات
+          </button>
+
           <div class="dropdown-menu">
+
             <a href="../industry/energy.html">
-              <div><strong>الطاقة</strong></div>
+              <div>
+                <strong>الطاقة</strong>
+              </div>
             </a>
+
             <a href="../industry/government.html">
-              <div><strong>الحكومة</strong></div>
+              <div>
+                <strong>الحكومة</strong>
+              </div>
             </a>
+
             <a href="../industry/corporate.html">
-              <div><strong>الشركات</strong></div>
+              <div>
+                <strong>الشركات</strong>
+              </div>
             </a>
+
           </div>
         </li>
 
+        <!-- المنتجات -->
         <li class="nav-dropdown">
-          <button class="nav-link dropdown-toggle">المنتجات</button>
+
+          <button
+            class="nav-link dropdown-toggle"
+            type="button"
+          >
+            المنتجات
+          </button>
+
           <div class="dropdown-menu">
+
             <a href="../Products/PR1.html">
-              <div><strong>Comtech CDM-625A</strong></div>
+              <div>
+                <strong>Comtech CDM-625A</strong>
+              </div>
             </a>
+
             <a href="../Products/PR2.html">
-              <div><strong>iDirect iQ 200</strong></div>
+              <div>
+                <strong>iDirect iQ 200</strong>
+              </div>
             </a>
+
             <a href="../Products/PR3.html">
-              <div><strong>Newtec MDM2510</strong></div>
+              <div>
+                <strong>Newtec MDM2510</strong>
+              </div>
             </a>
+
           </div>
         </li>
 
-        <li><a class="nav-link" href="../index.html#contact">اتصل بنا</a></li>
+        <!-- اتصل بنا -->
+        <li>
+          <a
+            class="nav-link"
+            href="../index.html#contact"
+          >
+            اتصل بنا
+          </a>
+        </li>
+
       </ul>
 
+      <!-- Header Actions -->
       <div class="nav-actions">
-        <button class="language-switch" type="button" aria-label="تبديل اللغة">
+
+        <button
+          class="language-switch"
+          type="button"
+          aria-label="تبديل اللغة"
+        >
           AR <span>/</span> EN
         </button>
-        <a class="header-cta" href="#contact">
-          اطلب عرض سعر <span aria-hidden="true">↗</span>
+
+        <a
+          class="header-cta"
+          href="#contact"
+        >
+          اطلب عرض سعر
+          <span aria-hidden="true">↗</span>
         </a>
+
       </div>
+
     </nav>
   </header>
 
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+
   <main>
+
+    <!-- ==========================================================
+         SERVICE HERO
+         ========================================================== -->
+
     <section class="service-hero">
+
       <div class="container">
+
         <div class="service-hero-grid">
+
           <div class="service-hero-content reveal">
-            <span class="eyebrow">VSAT</span>
-            <h1>اتصال لا ينقطع في أقسى الظروف</h1>
+
+            <span class="eyebrow">
+              VSAT
+            </span>
+
+            <h1>
+              اتصال لا ينقطع في أقسى الظروف
+            </h1>
+
             <p>
-              حل مستقل عن الشبكات الأرضية، مصمم للمواقع النائية والبعيدة، ويضمن اتصالاً مستقرًا
+              حل مستقل عن الشبكات الأرضية، مصمم للمواقع النائية والبعيدة، ويضمن اتصالاً مستقراً
               للـ data والـ voice حتى عندما تكون البنية التقليدية مفقودة أو غير موثوقة.
             </p>
+
             <div class="service-hero-actions">
-              <a class="button button-primary" href="#contact">اطلب استشارة مجانية</a>
-              <a class="button button-outline" href="#overview">اكتشف التفاصيل</a>
+
+              <a
+                class="button button-primary"
+                href="#contact"
+              >
+                اطلب استشارة مجانية
+              </a>
+
+              <a
+                class="button button-outline"
+                href="#overview"
+              >
+                اكتشف التفاصيل
+              </a>
+
             </div>
+
           </div>
 
+
           <div class="service-hero-visual reveal">
-            <img src="services-images/vsat.jpg" alt="اتصال VSAT" />
+
+            <img
+              src="services-images/vsat.jpg"
+              alt="اتصال VSAT"
+            />
+
             <div class="hero-badge">
               <strong>48 ساعة</strong>
               <span>تركيب وتشغيل</span>
             </div>
+
           </div>
+
         </div>
+
       </div>
     </section>
 
-    <section class="content-section" id="overview">
+
+    <!-- ==========================================================
+         OVERVIEW
+         ========================================================== -->
+
+    <section
+      class="content-section"
+      id="overview"
+    >
+
       <div class="container">
+
         <div class="section-head reveal">
+
           <div>
-            <div class="eyebrow dark"><span class="eyebrow-line"></span>نظرة عامة</div>
-            <h2>حلٌ يفهم <em>مواقعك</em> قبل أن يطلب منها الثقة</h2>
+
+            <div class="eyebrow dark">
+              <span class="eyebrow-line"></span>
+              نظرة عامة
+            </div>
+
+            <h2>
+              حلٌ يفهم
+              <em>مواقعك</em>
+              قبل أن يطلب منها الثقة
+            </h2>
+
           </div>
+
         </div>
+
         <div class="overview-box reveal">
+
           <p>
             عندما لا توجد شبكة أرضية موثوقة، أو عندما تحتاج إلى اتصال مستمر في بيئة صعبة، يصبح VSAT
             الخيار الأنسب. نساعدك في تصميم الشبكة بشكل يراعي موقعك، أوقات التشغيل، ومقاييس الأداء المطلوبة،
             لضمان وصولك إلى البيانات والاتصال دون تعطل.
           </p>
+
         </div>
+
       </div>
     </section>
 
+
+    <!-- ==========================================================
+         FEATURES
+         ========================================================== -->
+
     <section class="content-section">
+
       <div class="container">
+
         <div class="section-head reveal">
+
           <div>
-            <div class="eyebrow dark"><span class="eyebrow-line"></span>المميزات</div>
-            <h2>ما الذي يجعل <em>VSAT</em> خيارًا موثوقًا؟</h2>
+
+            <div class="eyebrow dark">
+              <span class="eyebrow-line"></span>
+              المميزات
+            </div>
+
+            <h2>
+              ما الذي يجعل
+              <em>VSAT</em>
+              خيارًا موثوقًا؟
+            </h2>
+
           </div>
+
         </div>
+
         <div class="feature-grid">
+
           <article class="feature-card reveal">
-            <h3>استقلالية كاملة عن الشبكات الأرضية</h3>
-            <p>لا تعتمد الخدمة على البنية التحتية المحلية، لذلك تناسب المواقع المعزولة والبعيدة عن المدن.</p>
+
+            <h3>
+              استقلالية كاملة عن الشبكات الأرضية
+            </h3>
+
+            <p>
+              لا تعتمد الخدمة على البنية التحتية المحلية، لذلك تناسب المواقع المعزولة والبعيدة عن المدن.
+            </p>
+
           </article>
+
           <article class="feature-card reveal">
-            <h3>توافق مع الطاقة الشمسية والبطاريات</h3>
-            <p>نصمم الأنظمة لتعمل بشكل مستمر داخل المواقع النائية مع حلول طاقة احتياطية متكاملة.</p>
+
+            <h3>
+              توافق مع الطاقة الشمسية والبطاريات
+            </h3>
+
+            <p>
+              نصمم الأنظمة لتعمل بشكل مستمر داخل المواقع النائية مع حلول طاقة احتياطية متكاملة.
+            </p>
+
           </article>
+
           <article class="feature-card reveal">
-            <h3>مقاومة للعواصف الرملية والأمطار</h3>
-            <p>تستخدم أطباق استقبال متينة ومصممة لتحمل الطقس القاسي، بما يحافظ على استقرار الاتصال.</p>
+
+            <h3>
+              مقاومة للعواصف الرملية والأمطار
+            </h3>
+
+            <p>
+              تستخدم أطباق استقبال متينة ومصممة لتحمل الطقس القاسي، بما يحافظ على استقرار الاتصال.
+            </p>
+
           </article>
+
           <article class="feature-card reveal">
-            <h3>تتبع تلقائي للأقمار الصناعية</h3>
-            <p>تتبع الشبكة تلقائيًا الأقمار المناسبة وفق الموقع والظروف، لتبقى الإشارة ثابتة ومستمرة.</p>
+
+            <h3>
+              تتبع تلقائي للأقمار الصناعية
+            </h3>
+
+            <p>
+              تتبع الشبكة تلقائيًا الأقمار المناسبة وفق الموقع والظروف، لتبقى الإشارة ثابتة ومستمرة.
+            </p>
+
           </article>
+
         </div>
+
       </div>
     </section>
 
+
+    <!-- ==========================================================
+         HOW WE WORK
+         ========================================================== -->
+
     <section class="content-section">
+
       <div class="container">
+
         <div class="section-head reveal">
+
           <div>
-            <div class="eyebrow dark"><span class="eyebrow-line"></span>كيف نعمل</div>
-            <h2>عملية واضحة، <em>سريعة</em> وفعالة</h2>
+
+            <div class="eyebrow dark">
+              <span class="eyebrow-line"></span>
+              كيف نعمل
+            </div>
+
+            <h2>
+              عملية واضحة،
+              <em>سريعة</em>
+              وفعالة
+            </h2>
+
           </div>
+
         </div>
+
         <div class="step-grid">
+
           <div class="step-item reveal">
-            <div class="step-number">1</div>
-            <h3>استشارة مجانية</h3>
-            <p>نحدد احتياجك وأهداف الشبكة، ثم نضع النموذج المناسب على أساس الموقع والتحميل المتوقع.</p>
+
+            <div class="step-number">
+              1
+            </div>
+
+            <h3>
+              استشارة مجانية
+            </h3>
+
+            <p>
+              نحدد احتياجك وأهداف الشبكة، ثم نضع النموذج المناسب على أساس الموقع والتحميل المتوقع.
+            </p>
+
           </div>
+
           <div class="step-item reveal">
-            <div class="step-number">2</div>
-            <h3>مسح الموقع</h3>
-            <p>نقوم بمراجعة الموقع بدقة لاختيار أفضل موقع للأطباق وقمر التشغيل الأنسب للأداء الأمثل.</p>
+
+            <div class="step-number">
+              2
+            </div>
+
+            <h3>
+              مسح الموقع
+            </h3>
+
+            <p>
+              نقوم بمراجعة الموقع بدقة لاختيار أفضل موقع للأطباق وقمر التشغيل الأنسب للأداء الأمثل.
+            </p>
+
           </div>
+
           <div class="step-item reveal">
-            <div class="step-number">3</div>
-            <h3>تركيب وتشغيل</h3>
-            <p>تُنفذ التركيبة احترافياً في أسرع وقت، مع فحص كامل لضمان جاهزية النظام خلال 48 ساعة.</p>
+
+            <div class="step-number">
+              3
+            </div>
+
+            <h3>
+              تركيب وتشغيل
+            </h3>
+
+            <p>
+              تُنفذ التركيبة احترافياً في أسرع وقت، مع فحص كامل لضمان جاهزية النظام خلال 48 ساعة.
+            </p>
+
           </div>
+
           <div class="step-item reveal">
-            <div class="step-number">4</div>
-            <h3>دعم وصيانة</h3>
-            <p>نواصل متابعة الأداء، نفحص الشبكة دوريًا، ونقدم الدعم الفني عند الحاجة لضمان استمرارية الخدمة.</p>
+
+            <div class="step-number">
+              4
+            </div>
+
+            <h3>
+              دعم وصيانة
+            </h3>
+
+            <p>
+              نواصل متابعة الأداء، نفحص الشبكة دوريًا، ونقدم الدعم الفني عند الحاجة لضمان استمرارية الخدمة.
+            </p>
+
           </div>
+
         </div>
+
       </div>
     </section>
+
+
+    <!-- ==========================================================
+         TARGET SECTORS
+         ========================================================== -->
 
     <section class="content-section">
+
       <div class="container">
+
         <div class="section-head reveal">
+
           <div>
-            <div class="eyebrow dark"><span class="eyebrow-line"></span>القطاعات المستفيدة</div>
-            <h2>تحل المشكلة في <em>أكثر البيئات صعوبة</em></h2>
+
+            <div class="eyebrow dark">
+              <span class="eyebrow-line"></span>
+              القطاعات المستفيدة
+            </div>
+
+            <h2>
+              تحل المشكلة في
+              <em>أكثر البيئات صعوبة</em>
+            </h2>
+
           </div>
+
         </div>
+
         <div class="case-grid">
+
           <article class="case-card reveal">
-            <h3>النفط والغاز</h3>
-            <p>اتصال مستقر للحقول والمواقع البعيدة، مع قدرة تشغيلية عالية في ظروف قاسية.</p>
+
+            <h3>
+              النفط والغاز
+            </h3>
+
+            <p>
+              اتصال مستقر للحقول والمواقع البعيدة، مع قدرة تشغيلية عالية في ظروف قاسية.
+            </p>
+
           </article>
+
           <article class="case-card reveal">
-            <h3>التعدين</h3>
-            <p>مراقبة البيانات، الاتصال بين المواقع، واستمرار التشغيل في بيئات بعيدة ومتشعبة.</p>
+
+            <h3>
+              التعدين
+            </h3>
+
+            <p>
+              مراقبة البيانات، الاتصال بين المواقع، واستمرار التشغيل في بيئات بعيدة ومتشعبة.
+            </p>
+
           </article>
+
           <article class="case-card reveal">
-            <h3>المنظمات الإنسانية</h3>
-            <p>توفر شبكة موثوقة في المناطق المتأثرة أو القريبة من نقاط الضعف لتسهيل التواصل.</p>
+
+            <h3>
+              المنظمات الإنسانية
+            </h3>
+
+            <p>
+              توفر شبكة موثوقة في المناطق المتأثرة أو القريبة من نقاط الضعف لتسهيل التواصل.
+            </p>
+
           </article>
+
           <article class="case-card reveal">
-            <h3>المواقع العسكرية</h3>
-            <p>حلول عملياتية قادرة على العمل في ظروف حرجة مع أمان واستمرارية عالية.</p>
+
+            <h3>
+              المواقع العسكرية
+            </h3>
+
+            <p>
+              حلول عملياتية قادرة على العمل في ظروف حرجة مع أمان واستمرارية عالية.
+            </p>
+
           </article>
+
         </div>
+
       </div>
     </section>
 
-    
-    </main>
 
-    <!--FOOTER-->
-    <footer class="site-footer">
+    <!-- ==========================================================
+         TECHNICAL SPECIFICATIONS
+         ========================================================== -->
 
-        <div class="container footer-grid">
+    <section class="content-section">
 
-            <div class="footer-brand">
+      <div class="container">
 
-                <a class="brand" href="../index.html">
+        <div class="section-head reveal">
 
-                    <span class="brand-mark" aria-hidden="true">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
+          <div>
 
-                    <span class="brand-name">
-                        Tech <b>Sat</b>
-                    </span>
-
-                </a>
-
-                <p>
-                    نصل إليك حيث لا تصل الشبكات التقليدية.
-                </p>
-
+            <div class="eyebrow dark">
+              <span class="eyebrow-line"></span>
+              المواصفات التقنية
             </div>
 
-            <div>
-                <h3>روابط سريعة</h3>
+            <h2>
+              مشروع يوازن بين
+              <em>الأداء</em>
+              والمرونة
+            </h2>
 
-                <ul>
-                    <li>
-                        <a href="index.html#hero">الرئيسية</a>
-                    </li>
-                    <li>
-                        <a href="index.html#about">من نحن</a>
-                    </li>
-                    <li>
-                        <a href="index.html#services">الخدمات</a>
-                    </li>
-                    <li>
-                        <a href="index.html#industries">القطاعات</a>
-                    </li>
-                    <li>
-                        <a href="index.html#products">المنتجات</a>
-                    </li>
-                    <li>
-                        <a href="index.html#contact">اطلب الخدمة</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>تواصل معنا</h3>
-
-                <p>hello@techsat.example</p>
-
-                <p dir="ltr">
-                    +967 000 000 000
-                </p>
-
-                <p>
-                   عدن، اليمن
-                </p>
-            </div>
-
-             <!-- Social Media -->
-                <div class="soical-icons">
-
-                    <h3>
-                        تابعنا
-                    </h3>
-
-                    <div class="social-icons">
-                            <a href="#" class="social-icon">
-                                <svg viewBox="0 0 24 24" aria-hidden="true">
-                                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817-5.964 6.817H1.684l7.73-8.835L1.254 2.25H8.08l4.713 6.231L18.244 2.25Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/>
-                                 </svg>
-                            </a>
-
-                            <a href="https://www.facebook.com/profile.php?id=100064730084237" class="social-icon">
-                                <svg viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v3H6v4h3v8h4v-8h3.2l.8-4H13V9c0-.6.4-1 1-1Z"/>
-                                 </svg>
-                            
-                            </a>
-
-                        
-                            <a href="https://www.linkedin.com" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                                <svg viewBox="0 0 640 640" aria-hidden="true">
-                                    <path d="M196.3 512L103.4 512L103.4 212.9L196.3 212.9L196.3 512zM149.8 172.1C120.1 172.1 96 147.5 96 117.8C96 103.5 101.7 89.9 111.8 79.8C121.9 69.7 135.6 64 149.8 64C164 64 177.7 69.7 187.8 79.8C197.9 89.9 203.6 103.6 203.6 117.8C203.6 147.5 179.5 172.1 149.8 172.1zM543.9 512L451.2 512L451.2 366.4C451.2 331.7 450.5 287.2 402.9 287.2C354.6 287.2 347.2 324.9 347.2 363.9L347.2 512L254.4 512L254.4 212.9L343.5 212.9L343.5 253.7L344.8 253.7C357.2 230.2 387.5 205.4 432.7 205.4C526.7 205.4 544 267.3 544 347.7L544 512L543.9 512z"/>
-                                </svg>
-                            </a>
-                    </div>
-                </div>
-
-            <div class="footer-support">
-                <span>الدعم والمبيعات</span>
-                <strong>24/7</strong>
-                <small>نحن هنا عندما تحتاجنا</small>
-            </div>
+          </div>
 
         </div>
+
+        <table
+          class="service-specs reveal"
+          aria-label="مواصفات خدمة VSAT"
+        >
+
+          <tbody>
+
+            <tr>
+              <th>سرعة البيانات</th>
+              <td>من 1 إلى 20 Mbps حسب الموقع والتحميل</td>
+            </tr>
+
+            <tr>
+              <th>النطاق</th>
+              <td>Ku-band و Ka-band</td>
+            </tr>
+
+            <tr>
+              <th>نوع التشغيل</th>
+              <td>مباشر، متحرك، ومصمم حسب متطلبات العميل</td>
+            </tr>
+
+            <tr>
+              <th>الاستمرارية</th>
+              <td>مستوى عالي مع طاقة احتياطية وتغطية موثوقة</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================
+         FAQ
+         ========================================================== -->
+
+    <section class="content-section faq-section">
+
+      <div class="container faq-layout">
+
+        <!-- FAQ Introduction -->
+        <div class="faq-intro reveal">
+
+          <div class="eyebrow dark">
+            <span class="eyebrow-line"></span>
+            الأسئلة الشائعة
+          </div>
+
+          <h2>
+            الأسئلة التي يطرحها
+            <em>العملاء</em>
+            غالبًا
+          </h2>
+
+        </div>
+
+
+        <!-- FAQ List -->
+        <div class="faq-list reveal">
+
+          <details>
+
+            <summary>
+              هل تتأثر الخدمة بالعواصف الرملية؟
+              <span>+</span>
+            </summary>
+
+            <p>
+              نستخدم أطباق مقاومة وظروف الطقس، وتتم معايرة النظام وفق متطلبات الموقع لضمان أفضل أداء ممكن في العواصف
+              الرملية والأمطار.
+            </p>
+
+          </details>
+
+          <details>
+
+            <summary>
+              كم يستغرق التركيب في المناطق الجبلية؟
+              <span>+</span>
+            </summary>
+
+            <p>
+              يعتمد الزمن على طبيعة الموقع والتجهيزات المطلوبة، إلا أن معظم المشاريع تُنجز خلال 48 إلى 72 ساعة من
+              التفعيل الأولي.
+            </p>
+
+          </details>
+
+          <details>
+
+            <summary>
+              هل يمكن تشغيلها بالطاقة الشمسية بالكامل؟
+              <span>+</span>
+            </summary>
+
+            <p>
+              نعم، يمكن تصميم النظام ليعمل مع أنظمة الطاقة الشمسية والبطاريات الاحتياطية لتوفير استمرارية دون الاعتماد
+              على الشبكة الأرضية.
+            </p>
+
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================
+         CONTACT CTA
+         ========================================================== -->
+
+    <section
+      class="content-section"
+      id="contact"
+    >
+
+      <div class="container">
+
+        <div class="service-cta reveal">
+
+          <div>
+
+            <div class="eyebrow">
+              <span class="eyebrow-line"></span>
+              جاهز تبدأ؟
+            </div>
+
+            <h3>
+              اطلب عرض سعر مخصص لموقعك
+            </h3>
+
+          </div>
+
+          <a
+            class="button button-light"
+            href="../index.html#contact"
+          >
+            تواصل معنا
+            <span>←</span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-grid">
+
+      <!-- Footer Brand -->
+      <div class="footer-brand">
+
+        <a
+          class="brand"
+          href="../index.html"
+        >
+
+          <span
+            class="brand-mark"
+            aria-hidden="true"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+
+          <span class="brand-name">
+            Tech <b>Sat</b>
+          </span>
+
+        </a>
+
+        <p>
+          نصل إليك حيث لا تصل الشبكات التقليدية.
+        </p>
+
+      </div>
+
+
+      <!-- Quick Links -->
+      <div>
+
+        <h3>
+          روابط سريعة
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="../index.html">
+              الرئيسية
+            </a>
+          </li>
+
+          <li>
+            <a href="../index.html#about">
+              من نحن
+            </a>
+          </li>
+
+          <li>
+            <a href="../index.html#services">
+              الخدمات
+            </a>
+          </li>
+
+          <li>
+            <a href="../index.html#industries">
+              القطاعات
+            </a>
+          </li>
+
+          <li>
+            <a href="../index.html#contact">
+              اتصل بنا
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- Contact -->
+      <div>
+
+        <h3>
+          تواصل معنا
+        </h3>
+
+        <p>
+          hello@techsat.example
+        </p>
+
+        <p dir="ltr">
+          +967 000 000 000
+        </p>
+
+        <p>
+          صنعاء، اليمن
+        </p>
+
+      </div>
+
+
+      <!-- Support -->
+      <div class="footer-support">
+
+        <span>
+          الدعم والمبيعات
+        </span>
+
+        <strong>
+          24/7
+        </strong>
+
+        <small>
+          نحن هنا عندما تحتاجنا
+        </small>
+
+      </div>
+
+    </div>
 
         <div class="container footer-bottom">
     <a href="https://www.facebook.com/youtechnology/" class="designed-by" target="_blank" rel="noopener noreferrer" aria-label="تم التصميم بواسطة يو لتقنية المعلومات">
@@ -376,27 +924,17 @@
             </span>
         </div>
 
-    </footer>
-
-    <script src="../tech-sat.js"></script>
-    <script src="service-page.js"></script>
-    <script src="../header.js"></script>
-  </body>
-      <div class="footer-support">
-        <span>الدعم والمبيعات</span>
-        <strong>24/7</strong>
-        <small>نحن هنا عندما تحتاجنا</small>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <span>© 2026 Tech Sat. جميع الحقوق محفوظة.</span>
-      <span>اتصالات تبني المستقبل.</span>
-    </div>
   </footer>
+
+
+  <!-- ============================================================
+       JAVASCRIPT
+       ============================================================ -->
 
   <script src="../tech-sat.js"></script>
   <script src="service-page.js"></script>
+  <script src="../header.js"></script>
+
 </body>
 
 </html>
