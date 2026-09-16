@@ -219,6 +219,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+    /* =========================================================
+       BACK TO TOP
+    ========================================================= */
+
+    backToTop?.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+
     updateActiveLink();
 
     /* ============================================================
@@ -270,4 +282,4 @@ const DELAY = 1900; // 1.5 ثانية - أسرع
 
   observer.observe(whySection);
 })();
-});
+;
