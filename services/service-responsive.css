@@ -1,0 +1,112 @@
+/* ============================================================
+   Responsive - Service Pages
+   ملف مستقل يحتوي على جميع قواعد التجاوب لصفحات الخدمات
+   ============================================================ */
+
+/* ============================================================
+   TABLET - 900px
+   ============================================================ */
+@media (max-width: 900px) {
+  .service-hero {
+    padding: 100px 0 60px;
+  }
+
+  .service-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .service-hero-visual {
+    max-width: 100%;
+  }
+
+  .hero-badge {
+    bottom: 16px;
+    right: 16px;
+    padding: 12px 18px;
+  }
+
+  .feature-grid,
+  .step-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-head,
+  .service-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .case-grid {
+    padding: 10px 24px;
+  }
+
+  .case-grid::before {
+    top: 16px;
+    bottom: 16px;
+  }
+
+  .case-card {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 20px 0;
+  }
+
+  .case-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .faq-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* ============================================================
+   MOBILE - 640px
+   ============================================================ */
+@media (max-width: 640px) {
+  .feature-grid,
+  .step-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-hero {
+    padding: 90px 0 40px;
+  }
+
+  .case-grid {
+    padding: 8px 20px;
+  }
+
+  .case-card {
+    padding: 18px 0;
+  }
+
+  .case-card h3 {
+    font-size: 1rem;
+  }
+
+  .service-specs tr {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 16px 20px;
+  }
+
+  .service-specs th,
+  .service-specs td {
+    text-align: right;
+  }
+}
+
+/* ============================================================
+   تقليل الحركة - احترام إعدادات المستخدم
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  .step-item,
+  .step-item .step-number {
+    transition: none;
+    animation: none;
+  }
+}
