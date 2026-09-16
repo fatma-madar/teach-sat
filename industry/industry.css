@@ -62,7 +62,7 @@
 
 .cta-content h2 {
     margin-bottom: 15px;
-
+    padding: 3%;
     font: 700 clamp(2rem, 4vw, 3.2rem) / 1.2 var(--display);
 }
 
