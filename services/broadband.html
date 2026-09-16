@@ -9,12 +9,14 @@
     />
     <title>النطاق العريض | Tech Sat</title>
     <link rel="stylesheet" href="../tech-sat.css" />
+    <link rel="stylesheet" href="../header.css" />
+    <link rel="stylesheet" href="../footer.css" />
     <link rel="stylesheet" href="service-page.css" />
     <link rel="stylesheet" href="service-responsive.css" />
-
   </head>
 
   <body class="service-page">
+    <!-- ==================== HEADER ==================== -->
     <header class="site-header" id="site-header">
       <nav class="navbar container" aria-label="التنقل الرئيسي">
         <a class="brand" href="../index.html" aria-label="Tech Sat - الرئيسية">
@@ -29,25 +31,57 @@
         </button>
 
         <ul class="nav-links" id="main-menu">
-          <li><a class="nav-link" href="../index.html#hero">الرئيسية</a></li>
-          <li><a class="nav-link" href="../index.html#about">من نحن</a></li>
-          <li class="nav-item has-menu">
-            <a class="nav-link service-nav-link" href="../index.html#services">الخدمات <span class="service-arrow" aria-hidden="true">▾</span></a>
-            <div class="dropdown-menu" aria-label="قائمة الخدمات">
-              <a class="all-services-link" href="../index.html#services">جميع الخدمات</a>
-              <a href="vsat.html">VSAT</a>
-              <a href="broadband.html">النطاق العريض</a>
-              <a href="voice-data.html">الصوت والبيانات</a>
-              <a href="integration.html">تكامل الأنظمة</a>
+          <li>
+            <a class="nav-link" href="../index.html">الرئيسية</a>
+          </li>
+
+          <li>
+            <a class="nav-link" href="../index.html#about">من نحن</a>
+          </li>
+
+          <!-- الخدمات -->
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">الخدمات</button>
+            <div class="dropdown-menu">
+              <a href="vsat.html"><div><strong>VSAT</strong></div></a>
+              <a href="broadband.html"><div><strong>النطاق العريض</strong></div></a>
+              <a href="voice-data.html"><div><strong>الصوت والبيانات</strong></div></a>
+              <a href="integration.html"><div><strong>تكامل الأنظمة</strong></div></a>
             </div>
           </li>
-          <li><a class="nav-link" href="../index.html#industries">القطاعات</a></li>
-          <li><a class="nav-link" href="../index.html#contact">اتصل بنا</a></li>
+
+          <!-- القطاعات -->
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">القطاعات</button>
+            <div class="dropdown-menu">
+              <a href="../industry/energy.html"><div><strong>الطاقة</strong></div></a>
+              <a href="../industry/government.html"><div><strong>الحكومة</strong></div></a>
+              <a href="../industry/corporate.html"><div><strong>الشركات</strong></div></a>
+            </div>
+          </li>
+
+          <!-- المنتجات -->
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">المنتجات</button>
+            <div class="dropdown-menu">
+              <a href="../Products/PR1.html"><div><strong>Comtech CDM-625A</strong></div></a>
+              <a href="../Products/PR2.html"><div><strong>iDirect iQ 200</strong></div></a>
+              <a href="../Products/PR3.html"><div><strong>Newtec MDM2510</strong></div></a>
+            </div>
+          </li>
+
+          <li>
+            <a class="nav-link" href="../index.html#contact">اتصل بنا</a>
+          </li>
         </ul>
 
         <div class="nav-actions">
-          <button class="language-switch" type="button" aria-label="تبديل اللغة">AR <span>/</span> EN</button>
-          <a class="header-cta" href="#contact">اطلب عرض سعر <span aria-hidden="true">↗</span></a>
+          <button class="language-switch" type="button" aria-label="تبديل اللغة">
+            AR <span>/</span> EN
+          </button>
+          <a class="header-cta" href="#contact">
+            اطلب عرض سعر <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </nav>
     </header>
@@ -239,8 +273,7 @@
               <div class="eyebrow"><span class="eyebrow-line"></span>جاهز تبدأ؟</div>
               <h3>اطلب عرض سعر مخصص لموقعك</h3>
             </div>
-            <a class="button button-light" href="mailto:hello@techsat.example">تواصل معنا <span>←</span></a>
-          </div>
+<a class="button button-light" href="../index.html#contact">تواصل معنا <span>←</span></a>          </div>
         </div>
       </section>
     </main>
@@ -257,8 +290,9 @@
         <div>
           <h3>روابط سريعة</h3>
           <ul>
-            <li><a href="../index.html#hero">الرئيسية</a></li>
-            <li><a href="../index.html#services">الخدمات</a></li>
+            <li><a href="../index.html">الرئيسية</a></li>
+            <li><a href="../index.html#about">من نحن</a></li>
+            <li><a href="vsat.html">الخدمات</a></li>
             <li><a href="../index.html#industries">القطاعات</a></li>
             <li><a href="../index.html#contact">اتصل بنا</a></li>
           </ul>
