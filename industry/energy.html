@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="حلول الاتصالات الفضائية VSAT لقطاع الطاقة والتعدين وحقول النفط والغاز في المواقع النائية من Tech Sat بشراكة استراتيجية مع IEC Telecom.">
-    <title>قطاع الطاقة والنفط والغاز | Tech Sat</title>
-    <link rel="stylesheet" href="tech-sat.css">
+    <title>قطاع الطاقة  | Tech Sat</title>
+    <link rel="stylesheet" href="../tech-sat.css">
+    <link rel="stylesheet" href="industry.css">
 </head>
 
 <body>
@@ -39,13 +40,13 @@
 
             <ul class="nav-links" id="main-menu">
                 <li>
-                    <a class="nav-link" href="index.html#hero">
+                    <a class="nav-link" href="../index.html#hero">
                         الرئيسية
                     </a>
                 </li>
 
                 <li>
-                    <a class="nav-link" href="index.html#about">
+                    <a class="nav-link" href="../index.html#about">
                         من نحن
                     </a>
                 </li>
@@ -56,14 +57,24 @@
                     </a>
                 </li>
 
-                <li>
-                    <a class="nav-link active" href="index.html#industries">
-                        القطاعات
-                    </a>
+                <li class="nav-item has-dropdown">
+                    <div class="nav-link-row">
+                        <a class="nav-link" href="#industries">
+                             القطاعات
+                         </a>
+                             <button type="button" class="nav-caret-btn" aria-expanded="false" aria-controls="sectors-dropdown" aria-label="عرض قطاعات Tech Sat">
+                                <span class="nav-caret" aria-hidden="true">⌄</span>
+                             </button>
+                     </div>
+                         <ul class="nav-dropdown" id="sectors-dropdown">
+                            <li><a href="energy.html">الطاقة</a></li>
+                            <li><a href="government.html">الحكومي</a></li>
+                            <li><a href="corporate.html">الشركات</a></li>
+                        </ul>
                 </li>
 
                 <li>
-                    <a class="nav-link" href="index.html#contact">
+                    <a class="nav-link" href="../index.html#contact">
                         اتصل بنا
                     </a>
                 </li>
@@ -74,7 +85,7 @@
                     AR <span>/</span> EN
                 </button>
 
-                <a class="header-cta" href="index.html#contact">
+                <a class="header-cta" href="#contact">
                     اطلب عرض سعر
                     <span aria-hidden="true">↗</span>
                 </a>
@@ -87,7 +98,7 @@
 
         <!--SECTOR BANNER HERO-->
         <section class="sector-banner-hero" id="sector-hero">
-            <img src="images/energey-hero.jpg" alt="محطة اتصالات فضائية VSAT وطاقة شمسية في حقول الطاقة والنفط"
+            <img src="/images/energey-hero.jpg" alt="محطة اتصالات فضائية VSAT وطاقة شمسية في حقول الطاقة والنفط"
                 class="banner-bg" loading="eager">
             <div class="banner-overlay"></div>
 
@@ -102,7 +113,7 @@
                     </div>
 
                     <h1 class="sector-title">
-                        اتصالات فضائية تعتمد عليها في <em>أقسى البيئات</em> وأبعد المواقع.
+                        اتصال فضائي لا يعرف التوقف
                     </h1>
 
                     <p class="sector-lead">
@@ -136,17 +147,14 @@
                             لماذا تفشل الشبكات التقليدية في مواقع الطاقة؟
                         </h2>
                     </div>
-                    <p>
-                        تعمل منشآت الطاقة في تضاريس وعرة ومناطق معزولة تماماً عن شبكات الألياف البصرية
-                        وأبراج الجوال، حيث يكلف أي انقطاع ملايين الدولارات ويعرض السلامة للخطر.
-                    </p>
+                    
                 </div>
 
                 <div class="challenges-grid">
 
                     <!-- Challenge 1 -->
                     <article class="challenge-card reveal">
-                        <span class="challenge-badge-warning">⚠ التحدي الأول</span>
+                        <span class="challenge-badge-warning"> التحدي الأول</span>
                         <h3>المواقع المعزولة وانعدام البنية التحتية</h3>
                         <p>
                             تقع حقول النفط ومحطات التعدين في عمق الصحاري أو على السواحل البعيدة حيث لا توجد
@@ -161,7 +169,7 @@
 
                     <!-- Challenge 2 -->
                     <article class="challenge-card reveal">
-                        <span class="challenge-badge-warning">⚠ التحدي الثاني</span>
+                        <span class="challenge-badge-warning">التحدي الثاني</span>
                         <h3>قسوة المناخ وارتفاع درجات الحرارة</h3>
                         <p>
                             تتعرض المعدات في مواقع الإنتاج لعواصف رملية، غبار كثيف، ودرجات حرارة شديدة،
@@ -176,7 +184,7 @@
 
                     <!-- Challenge 3 -->
                     <article class="challenge-card reveal">
-                        <span class="challenge-badge-warning">⚠ التحدي الثالث</span>
+                        <span class="challenge-badge-warning"> التحدي الثالث</span>
                         <h3>حساسية بيانات SCADA واستمرارية الإنتاج</h3>
                         <p>
                             تتطلب صمامات الأنابيب، ضواغط الغاز، ومولدات الكهرباء نقل قراءات فورية بدون تأخير
@@ -207,10 +215,7 @@
                             حزمة اتصالات شاملة <em>لقطاع الطاقة</em>
                         </h2>
                     </div>
-                    <p>
-                        نبتكر حلولاً مخصصة تجمع بين عتاد الاتصال الفضائي، وأنظمة الطاقة البديلة،
-                        والإدارة الأمنية الشاملة لضمان كفاءة عملياتك.
-                    </p>
+                    
                 </div>
 
                 <div class="solutions-grid">
@@ -281,12 +286,10 @@
                             نماذج ميدانية
                         </div>
                         <h2>
-                            سيناريوهات استخدام واقعية في <em>اليمن والمنطقة</em>
+                         سيناريوهات الاستخدام في <em>المحافظات اليمنية</em>
                         </h2>
                     </div>
-                    <p>
-                        تطبيقات حقيقية تبرهن على كفاءة حلول Tech Sat في تلبية الاحتياجات التشغيلية الصعبة.
-                    </p>
+                   
                 </div>
 
                 <div class="use-case-grid">
@@ -455,8 +458,8 @@
         </div>
 
         <div class="form-submit">
-          <button type="submit" class="btn btn--primary">
-            إرسال الرسالة <span class="btn-arrow">→</span>
+          <button type="submit" class="btn-primary">
+            إرسال الرسالة <span>→</span>
           </button>
         </div>
       </form>
@@ -525,7 +528,7 @@
 
             <div class="footer-brand">
 
-                <a class="brand" href="index.html">
+                <a class="brand" href="../index.html">
 
                     <span class="brand-mark" aria-hidden="true">
                         <span></span>
@@ -609,7 +612,7 @@
     <button class="back-to-top" type="button" aria-label="العودة إلى أعلى الصفحة">↑</button>
 
     <!--JAVASCRIPT-->
-    <script src="tech-sat.js"></script>
+    <script src="../tech-sat.js"></script>
 
 </body>
 

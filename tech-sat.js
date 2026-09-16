@@ -21,6 +21,34 @@ document.addEventListener('DOMContentLoaded', () => {
     faqItems.forEach((item) => {
         item.open = false;
     });
+    
+    const dropdownItems = [...document.querySelectorAll('.nav-item.has-dropdown')];
+ 
+    const closeDropdowns = () => {
+        dropdownItems.forEach((item) => {
+            item.classList.remove('is-open');
+            item.querySelector('.nav-caret-btn')?.setAttribute('aria-expanded', 'false');
+        });
+    };
+ 
+    dropdownItems.forEach((item) => {
+        const toggleBtn = item.querySelector('.nav-caret-btn');
+        toggleBtn?.addEventListener('click', (event) => {
+            event.stopPropagation();
+            const isOpen = item.classList.contains('is-open');
+            closeDropdowns();
+            item.classList.toggle('is-open', !isOpen);
+            toggleBtn.setAttribute('aria-expanded', String(!isOpen));
+        });
+    });
+ 
+    document.addEventListener('click', (event) => {
+        if (!event.target.closest('.nav-item.has-dropdown')) closeDropdowns();
+    });
+ 
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') closeDropdowns();
+    });
 
     const setMenuState = (isOpen) => {
         navLinks.classList.toggle('active', isOpen);
