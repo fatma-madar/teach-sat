@@ -13,7 +13,7 @@
         if (entry.isIntersecting && !triggered) {
           triggered = true;
           runSequence();
-          observer.disconnect(); // لا تتكرر الحركة
+          observer.disconnect();
         }
       });
     },
@@ -23,8 +23,8 @@
   observer.observe(stepGrid);
 
   function runSequence() {
-    const DELAY = 900;       // الفاصل الزمني بين كل كارد (~0.9 ثانية)
-    const DURATION = 1100;   // مدة بقاء التوهج على الكارد
+    const DELAY = 3000;      // 🆕 الفاصل الزمني بين كل كارد (3 ثواني)
+    const DURATION = 2800;   // 🆕 مدة بقاء التوهج (2.8 ثانية - أقل قليلاً من DELAY عشان يرتاح بين الكاردات)
 
     items.forEach(function (item, i) {
       setTimeout(function () {

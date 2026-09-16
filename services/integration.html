@@ -1,284 +1,371 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="تكامل الأنظمة — شبكات داخلية بمعايير عالمية. تصميم وتركيب شبكات الشركات والمؤسسات."
-    />
-    <title>تكامل الأنظمة | Tech Sat</title>
-    <link rel="stylesheet" href="../tech-sat.css" />
-    <link rel="stylesheet" href="service-page.css" />
-    <link rel="stylesheet" href="service-responsive.css" />
 
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="تكامل الأنظمة — شبكات داخلية بمعايير عالمية. تصميم وتركيب شبكات الشركات والمؤسسات." />
+  <title>تكامل الأنظمة | Tech Sat</title>
+  <link rel="stylesheet" href="../tech-sat.css" />
+  <link rel="stylesheet" href="../header.css" />
+  <link rel="stylesheet" href="../footer.css" />
+  <link rel="stylesheet" href="service-page.css" />
+  <link rel="stylesheet" href="service-responsive.css" />
+</head>
 
-  <body class="service-page">
-    <header class="site-header" id="site-header">
-      <nav class="navbar container" aria-label="التنقل الرئيسي">
-        <a class="brand" href="../index.html" aria-label="Tech Sat - الرئيسية">
-          <span class="brand-mark" aria-hidden="true">
-            <span></span><span></span><span></span>
-          </span>
+<body class="service-page">
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar container" aria-label="التنقل الرئيسي">
+      <a class="brand" href="../index.html" aria-label="Tech Sat - الرئيسية">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span class="brand-name">Tech <b>Sat</b></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false"
+        aria-controls="main-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="main-menu">
+        <li>
+          <a class="nav-link" href="../index.html">الرئيسية</a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="../index.html#about">من نحن</a>
+        </li>
+
+        <!-- الخدمات -->
+        <li class="nav-dropdown">
+          <a class="nav-link dropdown-toggle" href="../index.html#services">
+            الخدمات
+          </a>
+          <div class="dropdown-menu">
+            <a href="vsat.html">
+              <div><strong>VSAT</strong></div>
+            </a>
+            <a href="broadband.html">
+              <div><strong>النطاق العريض</strong></div>
+            </a>
+            <a href="voice-data.html">
+              <div><strong>الصوت والبيانات</strong></div>
+            </a>
+            <a href="integration.html">
+              <div><strong>تكامل الأنظمة</strong></div>
+            </a>
+          </div>
+        </li>
+
+        <!-- القطاعات -->
+        <li class="nav-dropdown">
+          <button class="nav-link dropdown-toggle">القطاعات</button>
+          <div class="dropdown-menu">
+            <a href="../industry/energy.html">
+              <div><strong>الطاقة</strong></div>
+            </a>
+            <a href="../industry/government.html">
+              <div><strong>الحكومة</strong></div>
+            </a>
+            <a href="../industry/corporate.html">
+              <div><strong>الشركات</strong></div>
+            </a>
+          </div>
+        </li>
+
+        <!-- المنتجات -->
+        <li class="nav-dropdown">
+          <button class="nav-link dropdown-toggle">المنتجات</button>
+          <div class="dropdown-menu">
+            <a href="../Products/PR1.html">
+              <div><strong>Comtech CDM-625A</strong></div>
+            </a>
+            <a href="../Products/PR2.html">
+              <div><strong>iDirect iQ 200</strong></div>
+            </a>
+            <a href="../Products/PR3.html">
+              <div><strong>Newtec MDM2510</strong></div>
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <a class="nav-link" href="../index.html#contact">اتصل بنا</a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="language-switch" type="button" aria-label="تبديل اللغة">
+          AR <span>/</span> EN
+        </button>
+        <a class="header-cta" href="#contact">
+          اطلب عرض سعر <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="service-hero">
+      <div class="container">
+        <div class="service-hero-grid">
+          <div class="service-hero-content reveal">
+            <span class="eyebrow">تكامل الأنظمة</span>
+            <h1>شبكات داخلية بمعايير عالمية</h1>
+            <p>
+              حلول متكاملة لتصميم وتركيب الشبكات الداخلية للشركات والمؤسسات، من التخطيط الهندسي
+              حتى التشغيل والصيانة، بجودة تناسب بيئات العمل الحرجة.
+            </p>
+            <div class="service-hero-actions">
+              <a class="button button-primary" href="#contact">اطلب استشارة مجانية</a>
+              <a class="button button-outline" href="#overview">اكتشف التفاصيل</a>
+            </div>
+          </div>
+
+          <div class="service-hero-visual reveal">
+            <img src="services-images/integration.jpg" alt="تكامل الأنظمة" />
+            <div class="hero-badge">
+              <strong>100%</strong>
+              <span>تصميم مخصص</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="overview">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow dark"><span class="eyebrow-line"></span>نظرة عامة</div>
+            <h2>شبكة داخلية <em>مصممة خصيصًا</em> لعملك</h2>
+          </div>
+        </div>
+        <div class="overview-box reveal">
+          <p>
+            الشبكة الداخلية هي العمود الفقري لأي مؤسسة. إذا كانت مصممة بشكل صحيح، ترفع الإنتاجية وتقلل
+            الأعطال. نقدم خدمة تكامل أنظمة كاملة تشمل دراسة الموقع، تصميم المخططات الهندسية، تركيب المعدات
+            (ألياف بصرية، سويتشات، أنظمة Wi-Fi Enterprise)، وربطها بأنظمة الأمن والمراقبة. كل ذلك بمعايير
+            دولية وتوثيق كامل بعد التسليم.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow dark"><span class="eyebrow-line"></span>المميزات</div>
+            <h2>ما الذي يجعل <em>حلولنا</em> مختلفة؟</h2>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <h3>تصميم مخصص لكل عميل</h3>
+            <p>ندرس موقعك واحتياجك ونصمم شبكة تناسبك بدلاً من حلول جاهزة لا تفي بالغرض.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>تركيب احترافي</h3>
+            <p>فريق فني مؤهل يقوم بالتركيب وفق المعايير الدولية مع اختبارات جودة شاملة.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>صيانة دورية</h3>
+            <p>عقود صيانة سنوية مع زيارات دورية وتقارير أداء تفصيلية.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>تكامل مع CCTV والأمن</h3>
+            <p>ربط شبكة الاتصال مع أنظمة المراقبة والتحكم لتوحيد الإدارة.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow dark"><span class="eyebrow-line"></span>كيف نعمل</div>
+            <h2>عملية واضحة، <em>سريعة</em> وفعالة</h2>
+          </div>
+        </div>
+        <div class="step-grid">
+          <div class="step-item reveal">
+            <div class="step-number">1</div>
+            <h3>دراسة الموقع</h3>
+            <p>نزور الموقع ونحدد نقاط الضعف والاحتياج الحقيقي قبل أي تصميم.</p>
+          </div>
+          <div class="step-item reveal">
+            <div class="step-number">2</div>
+            <h3>التصميم الهندسي</h3>
+            <p>نضع المخططات التفصيلية للشبكة، نقاط التوزيع، والبنية التحتية.</p>
+          </div>
+          <div class="step-item reveal">
+            <div class="step-number">3</div>
+            <h3>التركيب والاختبار</h3>
+            <p>نركّب كل المكونات ونجري اختبارات شاملة لكل نقطة اتصال.</p>
+          </div>
+          <div class="step-item reveal">
+            <div class="step-number">4</div>
+            <h3>التسليم والتوثيق</h3>
+            <p>نسلّم المشروع مع كل المخططات والتوثيق، ونوفر التدريب والدعم.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow dark"><span class="eyebrow-line"></span>القطاعات المستفيدة</div>
+            <h2>حلول تناسب <em>كل بيئة عمل</em></h2>
+          </div>
+        </div>
+        <div class="case-grid">
+          <article class="case-card reveal">
+            <h3>المباني الحكومية</h3>
+            <p>شبكات آمنة ومعزولة تناسب متطلبات القطاع الحكومي.</p>
+          </article>
+          <article class="case-card reveal">
+            <h3>المستشفيات</h3>
+            <p>شبكات عالية الاعتمادية لدعم الأنظمة الطبية والأجهزة الحساسة.</p>
+          </article>
+          <article class="case-card reveal">
+            <h3>المكاتب الإدارية</h3>
+            <p>شبكات LAN/Wi-Fi Enterprise لرفع الإنتاجية وتسهيل التعاون.</p>
+          </article>
+          <article class="case-card reveal">
+            <h3>المصانع</h3>
+            <p>ربط خطوط الإنتاج وأنظمة التحكم في بيئة صناعية حساسة.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow dark"><span class="eyebrow-line"></span>المواصفات التقنية</div>
+            <h2>بنية <em>قوية</em> بمعايير عالمية</h2>
+          </div>
+        </div>
+        <table class="service-specs reveal" aria-label="مواصفات خدمة تكامل الأنظمة">
+          <tbody>
+            <tr>
+              <th>أنواع الشبكات</th>
+              <td>LAN / WAN / Wi-Fi Enterprise</td>
+            </tr>
+            <tr>
+              <th>البنية التحتية</th>
+              <td>ألياف بصرية، نحاس Cat6، نقاط توزيع منظمة</td>
+            </tr>
+            <tr>
+              <th>الأمان</th>
+              <td>جدران نارية، VLANs، وأنظمة مراقبة</td>
+            </tr>
+            <tr>
+              <th>التوثيق</th>
+              <td>مخططات هندسية كاملة + تقرير تسليم</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="content-section faq-section">
+      <div class="container faq-layout">
+        <div class="faq-intro reveal">
+          <div class="eyebrow dark"><span class="eyebrow-line"></span>الأسئلة الشائعة</div>
+          <h2>الأسئلة التي يطرحها <em>العملاء</em> غالبًا</h2>
+        </div>
+
+        <div class="faq-list reveal">
+          <details>
+            <summary>هل توفرون المعدات أم نشتريها بأنفسنا؟ <span>+</span></summary>
+            <p>نوفر كلا الخيارين: يمكننا توريد المعدات بأسعار تنافسية، أو تركيب معداتكم الحالية بعد مراجعتها والتأكد من
+              توافقها.</p>
+          </details>
+          <details>
+            <summary>ما هي مدة الضمان على التركيب؟ <span>+</span></summary>
+            <p>نقدم ضماناً على التركيب لمدة سنة كاملة، يشمل أي عيوب في التنفيذ أو التركيب، مع زيارة مجانية للفحص.</p>
+          </details>
+          <details>
+            <summary>هل تقدمون عقود صيانة سنوية؟ <span>+</span></summary>
+            <p>نعم، نوفر عقود صيانة سنوية بثلاث مستويات (أساسي، متقدم، شامل)، كل مستوى يحدد عدد الزيارات وزمن الاستجابة.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="contact">
+      <div class="container">
+        <div class="service-cta reveal">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span>جاهز تبدأ؟</div>
+            <h3>اطلب عرض سعر مخصص لموقعك</h3>
+          </div>
+          <a class="button button-light" href="../index.html#contact">تواصل معنا <span>←</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="../index.html">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
           <span class="brand-name">Tech <b>Sat</b></span>
         </a>
+        <p>نصل إليك حيث لا تصل الشبكات التقليدية.</p>
+      </div>
 
-        <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="main-menu">
-          <span></span><span></span><span></span>
-        </button>
-
-        <ul class="nav-links" id="main-menu">
-          <li><a class="nav-link" href="../index.html#hero">الرئيسية</a></li>
-          <li><a class="nav-link" href="../index.html#about">من نحن</a></li>
-          <li class="nav-item has-menu">
-            <a class="nav-link service-nav-link" href="../index.html#services">الخدمات <span class="service-arrow" aria-hidden="true">▾</span></a>
-            <div class="dropdown-menu" aria-label="قائمة الخدمات">
-              <a class="all-services-link" href="../index.html#services">جميع الخدمات</a>
-              <a href="vsat.html">VSAT</a>
-              <a href="broadband.html">النطاق العريض</a>
-              <a href="voice-data.html">الصوت والبيانات</a>
-              <a href="integration.html">تكامل الأنظمة</a>
-            </div>
-          </li>
-          <li><a class="nav-link" href="../index.html#industries">القطاعات</a></li>
-          <li><a class="nav-link" href="../index.html#contact">اتصل بنا</a></li>
+      <div>
+        <h3>روابط سريعة</h3>
+        <ul>
+          <li><a href="../index.html">الرئيسية</a></li>
+          <li><a href="../index.html#about">من نحن</a></li>
+          <li><a href="../index.html#services">الخدمات</a></li>
+          <li><a href="../index.html#industries">القطاعات</a></li>
+          <li><a href="../index.html#contact">اتصل بنا</a></li>
         </ul>
-
-        <div class="nav-actions">
-          <button class="language-switch" type="button" aria-label="تبديل اللغة">AR <span>/</span> EN</button>
-          <a class="header-cta" href="#contact">اطلب عرض سعر <span aria-hidden="true">↗</span></a>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <section class="service-hero">
-        <div class="container">
-          <div class="service-hero-grid">
-            <div class="service-hero-content reveal">
-              <span class="eyebrow">تكامل الأنظمة</span>
-              <h1>شبكات داخلية بمعايير عالمية</h1>
-              <p>
-                حلول متكاملة لتصميم وتركيب الشبكات الداخلية للشركات والمؤسسات، من التخطيط الهندسي
-                حتى التشغيل والصيانة، بجودة تناسب بيئات العمل الحرجة.
-              </p>
-              <div class="service-hero-actions">
-                <a class="button button-primary" href="#contact">اطلب استشارة مجانية</a>
-                <a class="button button-outline" href="#overview">اكتشف التفاصيل</a>
-              </div>
-            </div>
-
-            <div class="service-hero-visual reveal">
-              <img src="services-images/integration.jpg" alt="تكامل الأنظمة" />
-              <div class="hero-badge">
-                <strong>100%</strong>
-                <span>تصميم مخصص</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-section" id="overview">
-        <div class="container">
-          <div class="section-head reveal">
-            <div>
-              <div class="eyebrow dark"><span class="eyebrow-line"></span>نظرة عامة</div>
-              <h2>شبكة داخلية <em>مصممة خصيصًا</em> لعملك</h2>
-            </div>
-          </div>
-          <div class="overview-box reveal">
-            <p>
-              الشبكة الداخلية هي العمود الفقري لأي مؤسسة. إذا كانت مصممة بشكل صحيح، ترفع الإنتاجية وتقلل
-              الأعطال. نقدم خدمة تكامل أنظمة كاملة تشمل دراسة الموقع، تصميم المخططات الهندسية، تركيب المعدات
-              (ألياف بصرية، سويتشات، أنظمة Wi-Fi Enterprise)، وربطها بأنظمة الأمن والمراقبة. كل ذلك بمعايير
-              دولية وتوثيق كامل بعد التسليم.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-section">
-        <div class="container">
-          <div class="section-head reveal">
-            <div>
-              <div class="eyebrow dark"><span class="eyebrow-line"></span>المميزات</div>
-              <h2>ما الذي يجعل <em>حلولنا</em> مختلفة؟</h2>
-            </div>
-          </div>
-          <div class="feature-grid">
-            <article class="feature-card reveal">
-              <h3>تصميم مخصص لكل عميل</h3>
-              <p>ندرس موقعك واحتياجك ونصمم شبكة تناسبك بدلاً من حلول جاهزة لا تفي بالغرض.</p>
-            </article>
-            <article class="feature-card reveal">
-              <h3>تركيب احترافي</h3>
-              <p>فريق فني مؤهل يقوم بالتركيب وفق المعايير الدولية مع اختبارات جودة شاملة.</p>
-            </article>
-            <article class="feature-card reveal">
-              <h3>صيانة دورية</h3>
-              <p>عقود صيانة سنوية مع زيارات دورية وتقارير أداء تفصيلية.</p>
-            </article>
-            <article class="feature-card reveal">
-              <h3>تكامل مع CCTV والأمن</h3>
-              <p>ربط شبكة الاتصال مع أنظمة المراقبة والتحكم لتوحيد الإدارة.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-section">
-        <div class="container">
-          <div class="section-head reveal">
-            <div>
-              <div class="eyebrow dark"><span class="eyebrow-line"></span>كيف نعمل</div>
-              <h2>عملية واضحة، <em>سريعة</em> وفعالة</h2>
-            </div>
-          </div>
-          <div class="step-grid">
-            <div class="step-item reveal">
-              <div class="step-number">1</div>
-              <h3>دراسة الموقع</h3>
-              <p>نزور الموقع ونحدد نقاط الضعف والاحتياج الحقيقي قبل أي تصميم.</p>
-            </div>
-            <div class="step-item reveal">
-              <div class="step-number">2</div>
-              <h3>التصميم الهندسي</h3>
-              <p>نضع المخططات التفصيلية للشبكة، نقاط التوزيع، والبنية التحتية.</p>
-            </div>
-            <div class="step-item reveal">
-              <div class="step-number">3</div>
-              <h3>التركيب والاختبار</h3>
-              <p>نركّب كل المكونات ونجري اختبارات شاملة لكل نقطة اتصال.</p>
-            </div>
-            <div class="step-item reveal">
-              <div class="step-number">4</div>
-              <h3>التسليم والتوثيق</h3>
-              <p>نسلّم المشروع مع كل المخططات والتوثيق، ونوفر التدريب والدعم.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-section">
-        <div class="container">
-          <div class="section-head reveal">
-            <div>
-              <div class="eyebrow dark"><span class="eyebrow-line"></span>القطاعات المستفيدة</div>
-              <h2>حلول تناسب <em>كل بيئة عمل</em></h2>
-            </div>
-          </div>
-          <div class="case-grid">
-            <article class="case-card reveal">
-              <h3>المباني الحكومية</h3>
-              <p>شبكات آمنة ومعزولة تناسب متطلبات القطاع الحكومي.</p>
-            </article>
-            <article class="case-card reveal">
-              <h3>المستشفيات</h3>
-              <p>شبكات عالية الاعتمادية لدعم الأنظمة الطبية والأجهزة الحساسة.</p>
-            </article>
-            <article class="case-card reveal">
-              <h3>المكاتب الإدارية</h3>
-              <p>شبكات LAN/Wi-Fi Enterprise لرفع الإنتاجية وتسهيل التعاون.</p>
-            </article>
-            <article class="case-card reveal">
-              <h3>المصانع</h3>
-              <p>ربط خطوط الإنتاج وأنظمة التحكم في بيئة صناعية حساسة.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-section">
-        <div class="container">
-          <div class="section-head reveal">
-            <div>
-              <div class="eyebrow dark"><span class="eyebrow-line"></span>المواصفات التقنية</div>
-              <h2>بنية <em>قوية</em> بمعايير عالمية</h2>
-            </div>
-          </div>
-          <table class="service-specs reveal" aria-label="مواصفات خدمة تكامل الأنظمة">
-            <tbody>
-              <tr><th>أنواع الشبكات</th><td>LAN / WAN / Wi-Fi Enterprise</td></tr>
-              <tr><th>البنية التحتية</th><td>ألياف بصرية، نحاس Cat6، نقاط توزيع منظمة</td></tr>
-              <tr><th>الأمان</th><td>جدران نارية، VLANs، وأنظمة مراقبة</td></tr>
-              <tr><th>التوثيق</th><td>مخططات هندسية كاملة + تقرير تسليم</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="content-section faq-section">
-        <div class="container faq-layout">
-          <div class="faq-intro reveal">
-            <div class="eyebrow dark"><span class="eyebrow-line"></span>الأسئلة الشائعة</div>
-            <h2>الأسئلة التي يطرحها <em>العملاء</em> غالبًا</h2>
-          </div>
-
-          <div class="faq-list reveal">
-            <details>
-              <summary>هل توفرون المعدات أم نشتريها بأنفسنا؟ <span>+</span></summary>
-              <p>نوفر كلا الخيارين: يمكننا توريد المعدات بأسعار تنافسية، أو تركيب معداتكم الحالية بعد مراجعتها والتأكد من توافقها.</p>
-            </details>
-            <details>
-              <summary>ما هي مدة الضمان على التركيب؟ <span>+</span></summary>
-              <p>نقدم ضماناً على التركيب لمدة سنة كاملة، يشمل أي عيوب في التنفيذ أو التركيب، مع زيارة مجانية للفحص.</p>
-            </details>
-            <details>
-              <summary>هل تقدمون عقود صيانة سنوية؟ <span>+</span></summary>
-              <p>نعم، نوفر عقود صيانة سنوية بثلاث مستويات (أساسي، متقدم، شامل)، كل مستوى يحدد عدد الزيارات وزمن الاستجابة.</p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-section" id="contact">
-        <div class="container">
-          <div class="service-cta reveal">
-            <div>
-              <div class="eyebrow"><span class="eyebrow-line"></span>جاهز تبدأ؟</div>
-              <h3>اطلب عرض سعر مخصص لموقعك</h3>
-            </div>
-            <a class="button button-light" href="mailto:hello@techsat.example">تواصل معنا <span>←</span></a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <a class="brand" href="../index.html">
-            <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
-            <span class="brand-name">Tech <b>Sat</b></span>
-          </a>
-          <p>نصل إليك حيث لا تصل الشبكات التقليدية.</p>
-        </div>
-        <div>
-          <h3>روابط سريعة</h3>
-          <ul>
-            <li><a href="../index.html#hero">الرئيسية</a></li>
-            <li><a href="../index.html#services">الخدمات</a></li>
-            <li><a href="../index.html#industries">القطاعات</a></li>
-            <li><a href="../index.html#contact">اتصل بنا</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>تواصل معنا</h3>
-          <p>hello@techsat.example</p>
-          <p dir="ltr">+967 000 000 000</p>
-          <p>صنعاء، اليمن</p>
-        </div>
       </div>
-      <div class="container footer-bottom">
-        <span>© 2026 Tech Sat. جميع الحقوق محفوظة.</span>
-        <span>اتصالات تبني المستقبل.</span>
-      </div>
-    </footer>
 
+<<<<<<< HEAD
     <script src="../tech-sat.js"></script>
     <script src="service-page.js"></script>
     <script src="../header.js"></script>
   </body>
+=======
+      <div>
+        <h3>تواصل معنا</h3>
+        <p>hello@techsat.example</p>
+        <p dir="ltr">+967 000 000 000</p>
+        <p>صنعاء، اليمن</p>
+      </div>
+
+      <div class="footer-support">
+        <span>الدعم والمبيعات</span>
+        <strong>24/7</strong>
+        <small>نحن هنا عندما تحتاجنا</small>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Tech Sat. جميع الحقوق محفوظة.</span>
+      <span>اتصالات تبني المستقبل.</span>
+    </div>
+  </footer>
+
+  <script src="../tech-sat.js"></script>
+  <script src="service-page.js"></script>
+</body>
+
+>>>>>>> fc6aeacf23860487a6704e019298fafdd96232be
 </html>

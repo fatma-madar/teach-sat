@@ -637,3 +637,57 @@
   100% { transform: scale(1.15); }
 }
 
+/* ============================================================
+   Header على صفحات الخدمات - خلفية داكنة دائمة
+   ============================================================ */
+.service-page .site-header {
+  background: rgba(33, 37, 41, 0.98);
+  border: 1px solid rgba(233, 236, 239, 0.08);
+  box-shadow: 0 10px 35px rgba(33, 37, 41, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.service-page .site-header .nav-link {
+  color: var(--light);
+}
+
+.service-page .site-header .brand-name {
+  color: var(--cream);
+}
+
+/* على الجوال - تحويل النص للون الداكن */
+@media (max-width: 820px) {
+  .service-page .site-header .nav-link {
+    color: var(--ink);
+  }
+  .service-page .site-header .brand-name {
+    color: var(--ink);
+  }
+}
+/* ============================================================
+   Dropdown على صفحات الخدمات - خلفية داكنة صلبة + حجم أصغر
+   ============================================================ */
+.service-page .site-header .dropdown-menu {
+  background: #1d2124;
+  border: 1px solid rgba(233, 236, 239, 0.08);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  min-width: 180px;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.service-page .site-header .dropdown-menu a {
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.service-page .site-header .dropdown-menu strong {
+  font-size: 0.85rem;
+  color: var(--cream);
+}
+
+.service-page .site-header .dropdown-menu a:hover {
+  background: rgba(191, 6, 3, 0.15);
+}
