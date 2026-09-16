@@ -52,15 +52,79 @@
                 </li>
 
                 <li>
-                    <a class="nav-link" href="../index.html#services">
+                    <a class="nav-link" href="index.html#services">
                         الخدمات
                     </a>
                 </li>
 
-                <li>
-                    <a class="nav-link active" href="index.html#industries">
-                        القطاعات
-                    </a>
+                <li class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle">
+                     القطاعات
+                        
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="energy.html">
+                            
+                            <div>
+                                <strong>الطاقة</strong>
+                                
+                            </div>
+                        </a>
+
+                        <a href="government.html">
+                            
+                            <div>
+                                <strong>الحكومة</strong>
+                                
+                            </div>
+                        </a>
+
+                        <a href="corporate.html">
+                            
+                            <div>
+                                <strong>الشركات</strong>
+                                
+                            </div>
+                        </a>
+
+                    </div>
+
+                     <li class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle">
+                        المنتجات
+                        
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../Products/PR1.html">
+                            
+                            <div>
+                                <strong>Comtech CDM-625A</strong>
+                                
+                            </div>
+                        </a>
+
+                        <a href="../Products/PR2.html">
+                            
+                            <div>
+                                <strong>iDirect iQ 200</strong>
+                                
+                            </div>
+                        </a>
+
+                        <a href="../Products/PR3.html">
+                            
+                            <div>
+                                <strong>اسم المنتج الثالث</strong>
+                                
+                            </div>
+                        </a>
+
+                    </div>
+                
                 </li>
 
                 <li>
@@ -88,7 +152,7 @@
 
         <!--  SECTOR BANNER HERO  -->
         <section class="sector-banner-hero" id="sector-hero">
-            <img src="/images/corporate-hero.jpg" alt="محطة اتصال فضائي لربط المقار الإقليمية والموانئ والشركات"
+            <img src="../images/corporate-hero.jpg" alt="محطة اتصال فضائي لربط المقار الإقليمية والموانئ والشركات"
                 class="banner-bg" loading="eager">
             <div class="banner-overlay"></div>
 
@@ -316,198 +380,38 @@
             </div>
         </section>
 
+        <!-- =========================
+             CTA
+        ========================== -->
+        <section class="product-cta" id="contact">
+
+            <div class="container">
+
+                <div class="cta-content">
+
+                    <span class="eyebrow">
+                        تواصل معنا
+                    </span>
+
+                    <h2>
+                        هل تحتاج إلى اتصال موثوق لعملياتك؟
+                    </h2>
+
+
+                    <a href="#" class="btn btn-primary">
+                        تواصل معنا
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
 
     </main>
 
-     <!-- CTA -->
-
-<section class="cta-section section" id="contact">
-  <div class="container">
-    <div class="cta-content">
-      <p class="kicker">تواصل معنا</p>
-
-      <h2>هل تحتاج إلى اتصال<br>يتجاوز حدود الشبكة؟</h2>
-
-      <p>
-        أخبرنا بموقع عملك وما تحتاجه للبقاء على اتصال.
-        سنساعدك في العثور على حل الاتصالات عبر الأقمار الصناعية
-        المناسب لاحتياجاتك.
-      </p>
-
-      <div style="margin-top: var(--space-xl);">
-        <div class="footer-contact-item" style="margin-bottom: 0.75rem;">
-          <svg viewBox="0 0 24 24">
-            <path
-              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
-          </svg>
-          <span style="color: rgba(255,255,255,0.7);">00967-2-396056</span>
-        </div>
-
-        <div class="footer-contact-item" style="margin-bottom: 0.75rem;">
-          <svg viewBox="0 0 24 24">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-            <polyline points="22,6 12,13 2,6" />
-          </svg>
-          <span style="color: rgba(255,255,255,0.7);">info@tech-sat.com</span>
-        </div>
-
-        <div class="footer-contact-item">
-          <svg viewBox="0 0 24 24">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-            <circle cx="12" cy="10" r="3" />
-          </svg>
-          <span style="color: rgba(255,255,255,0.7);">عدن، اليمن</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="contact-form reveal">
-      <form id="contactForm" action="#" method="POST" novalidate>
-        <div class="form-grid">
-
-          <div class="form-group">
-            <label for="contact-name">الاسم الكامل</label>
-            <input
-              type="text"
-              id="contact-name"
-              name="name"
-              placeholder="اسمك"
-              required>
-          </div>
-
-          <div class="form-group">
-            <label for="contact-company">الشركة / المؤسسة</label>
-            <input
-              type="text"
-              id="contact-company"
-              name="company"
-              placeholder="اسم الشركة">
-          </div>
-
-          <div class="form-group">
-            <label for="contact-email">البريد الإلكتروني</label>
-            <input
-              type="email"
-              id="contact-email"
-              name="email"
-              placeholder="your@email.com"
-              required>
-          </div>
-
-          <div class="form-group">
-            <label for="contact-phone">رقم الهاتف</label>
-            <input
-              type="tel"
-              id="contact-phone"
-              name="phone"
-              placeholder="+967 ...">
-          </div>
-
-          <div class="form-group">
-            <label for="contact-service">الخدمة المطلوبة</label>
-            <select id="contact-service" name="service">
-              <option value="" disabled selected>اختر الخدمة</option>
-              <option value="vsat">إنترنت VSAT عريض النطاق</option>
-              <option value="bgan">BGAN / محطة طرفية محمولة</option>
-              <option value="voice">اتصالات صوتية / هاتف عبر الأقمار الصناعية</option>
-              <option value="tracking">التتبع والبيانات / إنترنت الأشياء (IoT)</option>
-              <option value="remote">الاتصال بالمناطق النائية</option>
-              <option value="other">أخرى / لست متأكدًا</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="contact-location">الموقع / المنطقة</label>
-            <input
-              type="text"
-              id="contact-location"
-              name="location"
-              placeholder="أين تحتاج إلى التغطية؟">
-          </div>
-
-          <div class="form-group full-width">
-            <label for="contact-message">الرسالة</label>
-            <textarea
-              id="contact-message"
-              name="message"
-              rows="4"
-              placeholder="أخبرنا عن احتياجاتك من خدمات الاتصال..."></textarea>
-          </div>
-
-          <!-- حقل مخفي لمكافحة الرسائل المزعجة -->
-          <div class="form-honey" aria-hidden="true">
-            <label for="contact-website">الموقع الإلكتروني</label>
-            <input
-              type="text"
-              id="contact-website"
-              name="website"
-              tabindex="-1"
-              autocomplete="off">
-          </div>
-
-        </div>
-
-        <div class="form-submit">
-          <button type="submit" class="btn btn-primary">
-            إرسال الرسالة <span>→</span>
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <!-- زخرفة الخلفية -->
-  <svg
-    class="cta-bg-decoration"
-    viewBox="0 0 600 800"
-    xmlns="http://www.w3.org/2000/svg"
-    aria-hidden="true">
-
-    <circle
-      cx="300"
-      cy="400"
-      r="250"
-      fill="none"
-      stroke="#BF0603"
-      stroke-width="0.5"
-      stroke-dasharray="4 8" />
-
-    <circle
-      cx="300"
-      cy="400"
-      r="180"
-      fill="none"
-      stroke="#BF0603"
-      stroke-width="0.5"
-      stroke-dasharray="4 8" />
-
-    <circle
-      cx="300"
-      cy="400"
-      r="110"
-      fill="none"
-      stroke="#BF0603"
-      stroke-width="0.5" />
-
-    <line
-      x1="300"
-      y1="100"
-      x2="300"
-      y2="700"
-      stroke="#BF0603"
-      stroke-width="0.3"
-      stroke-dasharray="2 6" />
-
-    <line
-      x1="50"
-      y1="400"
-      x2="550"
-      y2="400"
-      stroke="#BF0603"
-      stroke-width="0.3"
-      stroke-dasharray="2 6" />
-  </svg>
-</section>
+     
 
     <!--  FOOTER  -->
     <footer class="site-footer">
