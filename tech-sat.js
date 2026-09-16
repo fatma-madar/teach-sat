@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', () => {
-        header.classList.toggle('scrolled', window.scrollY > 20);
+        header.classList.toggle('scrolled', window.scrollY > 600);
         backToTop?.classList.toggle('visible', window.scrollY > 600);
         updateActiveLink();
     }, { passive: true });
