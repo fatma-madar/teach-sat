@@ -230,3 +230,56 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+    updateActiveLink();
+
+    /* ============================================================
+   الحركة التلقائية لسيكشن "لماذا Tech Sat"
+   ============================================================ */
+(function () {
+  const whySection = document.querySelector('.why-section');
+  const points = document.querySelectorAll('.why-point');
+
+  if (!whySection || !points.length) return;
+
+  let whyTriggered = false;
+
+  function activatePoint(point) {
+    points.forEach(function (p) { p.classList.remove('is-selected'); });
+    point.classList.add('is-selected');
+
+    const title = point.dataset.whyTitle || '';
+    const caption = point.dataset.whyCaption || '';
+
+    const display = document.querySelector('.why-display');
+    const displayCaption = document.querySelector('.why-display-caption');
+
+    if (display) display.innerHTML = `${title}<br><b>TECH SAT</b>`;
+    if (displayCaption) displayCaption.textContent = caption;
+  }
+
+  function runWhySequence() {
+const DELAY = 1900; // 1.5 ثانية - أسرع
+    points.forEach(function (point, i) {
+      setTimeout(function () {
+        activatePoint(point);
+      }, i * DELAY);
+    });
+  }
+
+  const observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && !whyTriggered) {
+          whyTriggered = true;
+          runWhySequence();
+          observer.disconnect();
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+  observer.observe(whySection);
+})();
+});
