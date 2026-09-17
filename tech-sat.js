@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* =========================================================
-       WHY TECH SAT
+       WHY TECH SAT - التفاعل اليدوي
     ========================================================= */
 
     const selectWhyPoint = (point) => {
@@ -229,62 +229,73 @@ document.addEventListener('DOMContentLoaded', () => {
             behavior: 'smooth'
         });
     });
-});
 
-    updateActiveLink();
 
-    /* ============================================================
-   الحركة التلقائية لسيكشن "لماذا Tech Sat"
-   ============================================================ */
-(function () {
-  const whySection = document.querySelector('.why-section');
-  const points = document.querySelectorAll('.why-point');
+    /* =========================================================
+       UPDATE ACTIVE LINK (آمن - يتحقق من وجود الدالة)
+    ========================================================= */
 
-  if (!whySection || !points.length) return;
+    if (typeof updateActiveLink === 'function') {
+        updateActiveLink();
+    }
 
-  let whyTriggered = false;
 
-  function activatePoint(point) {
-    points.forEach(function (p) { p.classList.remove('is-selected'); });
-    point.classList.add('is-selected');
+    /* =========================================================
+       WHY TECH SAT - الحركة التلقائية
+    ========================================================= */
 
-    const title = point.dataset.whyTitle || '';
-    const caption = point.dataset.whyCaption || '';
+    (function () {
+        const whySection = document.querySelector('.why-section');
+        const points = document.querySelectorAll('.why-point');
 
-    const display = document.querySelector('.why-display');
-    const displayCaption = document.querySelector('.why-display-caption');
+        if (!whySection || !points.length) return;
 
-    if (display) display.innerHTML = `${title}<br><b>TECH SAT</b>`;
-    if (displayCaption) displayCaption.textContent = caption;
-  }
+        let whyTriggered = false;
 
-  function runWhySequence() {
-const DELAY = 1900; // 1.5 ثانية - أسرع
-    points.forEach(function (point, i) {
-      setTimeout(function () {
-        activatePoint(point);
-      }, i * DELAY);
-    });
-  }
+        function activatePoint(point) {
+            points.forEach(function (p) {
+                p.classList.remove('is-selected');
+            });
+            point.classList.add('is-selected');
 
-  const observer = new IntersectionObserver(
-    function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting && !whyTriggered) {
-          whyTriggered = true;
-          runWhySequence();
-          observer.disconnect();
+            const title = point.dataset.whyTitle || '';
+            const caption = point.dataset.whyCaption || '';
+
+            const display = document.querySelector('.why-display');
+            const displayCaption = document.querySelector('.why-display-caption');
+
+            if (display) {
+                display.innerHTML = `${title}<br><b>TECH SAT</b>`;
+            }
+            if (displayCaption) {
+                displayCaption.textContent = caption;
+            }
         }
-      });
-    },
-    { threshold: 0.4 }
-  );
 
-  observer.observe(whySection);
+        function runWhySequence() {
+            const DELAY = 1900;
 
+            points.forEach(function (point, i) {
+                setTimeout(function () {
+                    activatePoint(point);
+                }, i * DELAY);
+            });
+        }
 
+        const observer = new IntersectionObserver(
+            function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting && !whyTriggered) {
+                        whyTriggered = true;
+                        runWhySequence();
+                        observer.disconnect();
+                    }
+                });
+            },
+            { threshold: 0.4 }
+        );
 
+        observer.observe(whySection);
+    })();
 
-
-})();
-
+});
