@@ -33,9 +33,16 @@
 }
 
 .header-logo-img {
-    height: 38px; 
-    width: auto; 
+    height: 38px;
+    width: auto;
     display: block;
+    padding: 4px 8px;
+    border-radius: 8px;
+    transition: background 0.4s ease;
+}
+
+.site-header.scrolled .header-logo-img {
+    background: rgba(255, 255, 255, 0.95);
 }
 
 
