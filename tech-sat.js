@@ -281,5 +281,10 @@ const DELAY = 1900; // 1.5 ثانية - أسرع
   );
 
   observer.observe(whySection);
+
+
+
+
+
 })();
 
