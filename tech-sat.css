@@ -998,6 +998,33 @@ button {
   font-size: 2rem;
 }
 
+.industry-symbol svg {
+    width: 32px;
+    height: 32px;
+    stroke: currentColor;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.industry-card i.arrow-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+}
+
+.industry-card i.arrow-icon svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.industry-card:hover i.arrow-icon svg {
+    transform: translate(-2px, -2px); 
+}
+
 .industry-card strong {
   font-size: 1.4rem;
 }

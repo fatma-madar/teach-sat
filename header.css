@@ -32,6 +32,12 @@
     box-shadow: 0 12px 40px rgba(33, 37, 41, 0.2);
 }
 
+.header-logo-img {
+    height: 38px; 
+    width: auto; 
+    display: block;
+}
+
 
 .navbar {
   min-height: 78px;
